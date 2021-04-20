@@ -9,15 +9,15 @@ namespace CoffeeShop
      class Caramel : BeverageDecorator
     {
        
-       private IBeverage _BeverageType;
-       private  int _AddOnCost;
+       private IBeverage _beverageType;
+       private  int _addOnCost;
   
 
-        public Caramel(IBeverage TypeOfBeverage , int CostOfAddOn)
+        public Caramel(IBeverage typeOfBeverage , int costOfAddOn)
         {
 
-            _BeverageType = TypeOfBeverage;
-            _AddOnCost = CostOfAddOn; 
+            _beverageType = typeOfBeverage;
+            _addOnCost = costOfAddOn; 
             
         }
 
@@ -26,13 +26,13 @@ namespace CoffeeShop
         {
            
 
-            return _BeverageType.GetCost() + _AddOnCost;
+            return _beverageType.GetCost() + _addOnCost;
 
         }
 
         public override string GetDescription()
         {
-            return _BeverageType.GetDescription() + " topped with Caramel";
+            return _beverageType.GetDescription() + " topped with Caramel";
         }
     }
 }

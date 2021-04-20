@@ -9,10 +9,10 @@ namespace CoffeeShop
     class Menu
     {
 
-       private dynamic _MenuItem;
-       private char _Choice;
-       private int _TotalCost;
-       private string _Description;
+       private dynamic _menuItem;
+       private char _choice;
+       private int _totalCost;
+       private string _description;
 
      
 
@@ -22,27 +22,27 @@ namespace CoffeeShop
             Console.WriteLine(Constants.SelectItemMenu);
          
 
-            this._Choice = Console.ReadKey().KeyChar;
+            this._choice = Console.ReadKey().KeyChar;
 
-            if (_Choice == '1')
+            if (_choice == '1')
             {
-                _MenuItem = new Tea(Constants.TeaCost);
+                _menuItem = new Tea(Constants.TeaCost);
 
-                _TotalCost = Constants.TeaCost;
+                _totalCost = Constants.TeaCost;
 
-                _Description = "Tea";
+                _description = "Tea";
 
 
             }
 
 
-            if (_Choice == '2')
+            if (_choice == '2')
             {
-                _MenuItem = new Coffee(Constants.CoffeeCost);
+                _menuItem = new Coffee(Constants.CoffeeCost);
 
-                _TotalCost = Constants.CoffeeCost;
+                _totalCost = Constants.CoffeeCost;
 
-                _Description = "Coffee";
+                _description = "Coffee";
             }
 
 
@@ -64,11 +64,11 @@ namespace CoffeeShop
                     if (Choice == 'A' || Choice == 'a')
                     {
 
-                        dynamic Custom = new Caramel(_MenuItem, Constants.CaramelCost);
+                        dynamic Custom = new Caramel(_menuItem, Constants.CaramelCost);
 
-                        _MenuItem = Custom;
+                        _menuItem = Custom;
 
-                        Console.WriteLine("Status : " + _MenuItem.GetDescription());
+                        Console.WriteLine("Status : " + _menuItem.GetDescription());
 
 
                 }
@@ -76,29 +76,29 @@ namespace CoffeeShop
                     if (Choice == 'B' || Choice == 'b')
                     {
 
-                        dynamic Custom = new Chocolate(_MenuItem, Constants.ChocolateCost);
-                        _MenuItem = Custom;
-                        Console.WriteLine("Status : " + _MenuItem.GetDescription());
+                        dynamic Custom = new Chocolate(_menuItem, Constants.ChocolateCost);
+                        _menuItem = Custom;
+                        Console.WriteLine("Status : " + _menuItem.GetDescription());
 
                     }
 
                     if (Choice == 'C' || Choice == 'c')
                     {
 
-                        dynamic Custom = new Cream(_MenuItem, Constants.CreamCost);
+                        dynamic Custom = new Cream(_menuItem, Constants.CreamCost);
 
-                        _MenuItem = Custom;
-                        Console.WriteLine("Status : " + _MenuItem.GetDescription());
+                        _menuItem = Custom;
+                        Console.WriteLine("Status : " + _menuItem.GetDescription());
                     }
 
                     if (Choice == 'D' || Choice == 'd')
                     {
 
-                        dynamic Custom = new Honey(_MenuItem, Constants.HoneyCost);
+                        dynamic Custom = new Honey(_menuItem, Constants.HoneyCost);
 
-                        _MenuItem = Custom;
+                        _menuItem = Custom;
 
-                        Console.WriteLine("Status : " + _MenuItem.GetDescription());
+                        Console.WriteLine("Status : " + _menuItem.GetDescription());
 
                     }
 
@@ -111,8 +111,8 @@ namespace CoffeeShop
                     }
 
 
-                _TotalCost = _MenuItem.GetCost();
-                _Description = _MenuItem.GetDescription();
+                _totalCost = _menuItem.GetCost();
+                _description = _menuItem.GetDescription();
 
             }
 
@@ -124,13 +124,13 @@ namespace CoffeeShop
 
         public int GetCost()
         {
-            return _TotalCost;
+            return _totalCost;
 
         }
 
         public string GetDescription()
         {
-            return _Description;
+            return _description;
         }
 
 

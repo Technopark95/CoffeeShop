@@ -9,18 +9,18 @@ namespace CoffeeShop
    public class Coffee : IBeverage
     {
 
-        private int Cost;
+        private int _cost;
 
-        public Coffee (int NewCost)
+        public Coffee (int newCost)
         {
 
-            Cost = NewCost;
+            _cost = newCost;
 
         }
 
         public int GetCost()
         {
-            return Cost;
+            return _cost;
         }
 
 
