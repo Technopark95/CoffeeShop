@@ -9,6 +9,9 @@ namespace CoffeeShop
     class Menu
     {
 
+
+        // using private field prefixed with _ and camelCase
+
        private dynamic _menuItem;
        private char _choice;
        private int _totalCost;

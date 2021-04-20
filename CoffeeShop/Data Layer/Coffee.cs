@@ -11,6 +11,7 @@ namespace CoffeeShop
 
         private int _cost;
 
+        //Using parameters as camelCase provided in the Decoumentation
         public Coffee (int newCost)
         {
 

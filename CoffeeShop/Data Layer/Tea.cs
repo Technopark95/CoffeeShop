@@ -11,7 +11,8 @@ namespace CoffeeShop
 
         private int _cost;
 
-        public Tea(int newCost)
+        //Using parameters as camelCase provided in the Decoumentation
+        public Tea(int newCost)     
         {
 
             _cost = newCost;
