@@ -24,16 +24,23 @@ namespace CoffeeShop
 
             //Console.WriteLine("Description : " + Customization.GetDescription());
 
+            try
+            {
+                Menu MenuItem = new Menu();
 
-            Menu MenuItem = new Menu();
+                MenuItem.SelectItem();
 
-            MenuItem.SelectItem();
+                MenuItem.SelectAddOns();
 
-            MenuItem.SelectAddOns();
+                Console.WriteLine("Total Cost : " + MenuItem.GetCost());
 
-            Console.WriteLine("Total Cost : " + MenuItem.GetCost());
+                Console.WriteLine("Total Description : " + MenuItem.GetDescription());
 
-            Console.WriteLine("Total Description : " + MenuItem.GetDescription());
+            }
+            catch(Exception Except)
+            {
+                Console.WriteLine(Except.Message);
+            }
 
             Console.ReadKey();
 

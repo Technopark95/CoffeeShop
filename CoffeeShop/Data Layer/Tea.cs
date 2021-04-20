@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace CoffeeShop
 {
-   public class Tea : Beverage
+   public class Tea : IBeverage
     {
 
-        private int cost;
+        private int Cost;
 
-        public Tea(int Newcost)
+        public Tea(int NewCost)
         {
 
-            cost = Newcost;
+            Cost = NewCost;
 
         }
 
 
         public int GetCost()
         {
-            return cost;
+            return Cost;
         }
 
 

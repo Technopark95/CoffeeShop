@@ -11,12 +11,11 @@ namespace CoffeeShop
 [AttributeUsage(AttributeTargets.All)]
  public class BeverageAttribute : System.Attribute
    {
-  
-      
+     
 }
 
     [Beverage]
-    abstract class BeverageDecorator : Beverage
+    abstract class BeverageDecorator : IBeverage
     {
         public abstract int GetCost();
         public abstract string GetDescription();

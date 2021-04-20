@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CoffeeShop
 {
-   public interface Beverage
+   public interface IBeverage
     {
 
         int GetCost();

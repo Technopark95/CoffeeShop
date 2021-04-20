@@ -8,15 +8,15 @@ namespace CoffeeShop
 {
     class Honey : BeverageDecorator
     {
-        private Beverage BeverageType;
-        private int AddOnCost;
+        private IBeverage _BeverageType;
+        private int _AddOnCost;
 
 
-        public Honey(Beverage TypeofBeverage, int CostOfAddOn)
+        public Honey(IBeverage TypeOfBeverage, int CostOfAddOn)
         {
 
-            BeverageType = TypeofBeverage;
-            AddOnCost = CostOfAddOn;
+            _BeverageType = TypeOfBeverage;
+            _AddOnCost = CostOfAddOn;
 
         }
 
@@ -24,13 +24,13 @@ namespace CoffeeShop
         public override int GetCost()
         {
 
-            return BeverageType.GetCost() + AddOnCost;
+            return _BeverageType.GetCost() + _AddOnCost;
 
         }
 
         public override string GetDescription()
         {
-            return BeverageType.GetDescription() + " topped with Honey";
+            return _BeverageType.GetDescription() + " topped with Honey";
         }
     }
 }

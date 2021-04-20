@@ -8,15 +8,15 @@ namespace CoffeeShop
 {
     class Cream : BeverageDecorator
     {
-        private Beverage BeverageType;
-        private int AddOnCost;
+        private IBeverage _BeverageType;
+        private int _AddOnCost;
 
 
-        public Cream(Beverage TypeofBeverage, int CostOfAddOn)
+        public Cream(IBeverage TypeOfBeverage, int CostOfAddOn)
         {
 
-            BeverageType = TypeofBeverage;
-            AddOnCost = CostOfAddOn;
+            _BeverageType = TypeOfBeverage;
+            _AddOnCost = CostOfAddOn;
 
         }
 
@@ -24,13 +24,13 @@ namespace CoffeeShop
         public override int GetCost()
         {
 
-            return BeverageType.GetCost() + AddOnCost;
+            return _BeverageType.GetCost() + _AddOnCost;
 
         }
 
         public override string GetDescription()
         {
-            return BeverageType.GetDescription() + " topped with Cream";
+            return _BeverageType.GetDescription() + " topped with Cream";
         }
     }
 }
