@@ -64,6 +64,8 @@ namespace CoffeeShop
 
                     char Choice = Console.ReadKey().KeyChar;
 
+                Console.Write(" -> ");
+
                     if (Choice == 'A' || Choice == 'a')
                     {
 

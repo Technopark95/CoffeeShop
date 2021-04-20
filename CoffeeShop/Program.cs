@@ -28,6 +28,8 @@ namespace CoffeeShop
 
                 MenuItem.SelectAddOns();
 
+                Console.WriteLine("\n"); // 2 line spacing
+
                 Console.WriteLine("Total Cost : " + MenuItem.GetCost());
 
                 Console.WriteLine("Total Description : " + MenuItem.GetDescription());
