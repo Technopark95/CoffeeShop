@@ -20,11 +20,9 @@ namespace CoffeeShop
 
             Customization = new Honey(Customization, 45);
 
+            Console.WriteLine("Total Cost : " + Customization.GetCost());
 
-
-            Console.WriteLine("Total Cost : " + Customization.getCost());
-
-            Console.WriteLine("Description : " + Customization.getDescription());
+            Console.WriteLine("Description : " + Customization.GetDescription());
 
 
             //Chocolate TeaWith2CaramelplusChocolate = new Chocolate(TeaWithDoubleCaramel, 50);
@@ -32,13 +30,13 @@ namespace CoffeeShop
             //Honey TeaWithCarameWithCh = new Honey(TeaWithCaramel, 56);
 
 
-            //Console.WriteLine("Cost : " + TeaWithCarameWithCh.getCost());
+            //Console.WriteLine("Cost : " + TeaWithCarameWithCh.GetCost());
 
-            //Console.WriteLine("Description : " + TeaWithCarameWithCh.getDescription());
+            //Console.WriteLine("Description : " + TeaWithCarameWithCh.GetDescription());
 
-            //Console.WriteLine("Cost : " + TeaWith2CaramelplusChocolate.getCost());
+            //Console.WriteLine("Cost : " + TeaWith2CaramelplusChocolate.GetCost());
 
-            //Console.WriteLine("Description : " +TeaWith2CaramelplusChocolate.getDescription());
+            //Console.WriteLine("Description : " +TeaWith2CaramelplusChocolate.GetDescription());
 
 
             Console.ReadKey();

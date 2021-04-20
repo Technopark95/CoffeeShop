@@ -22,17 +22,17 @@ namespace CoffeeShop
         }
 
 
-        public override int getCost()
+        public override int GetCost()
         {
            
 
-            return BeverageType.getCost() + AddOnCost;
+            return BeverageType.GetCost() + AddOnCost;
 
         }
 
-        public override string getDescription()
+        public override string GetDescription()
         {
-            return BeverageType.getDescription() + " topped with Caramel";
+            return BeverageType.GetDescription() + " topped with Caramel";
         }
     }
 }

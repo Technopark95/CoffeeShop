@@ -19,13 +19,13 @@ namespace CoffeeShop
         }
 
 
-        public int getCost()
+        public int GetCost()
         {
             return cost;
         }
 
 
-        public string getDescription()
+        public string GetDescription()
         {
 
             return "Tea";

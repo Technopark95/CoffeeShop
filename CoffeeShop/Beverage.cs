@@ -9,9 +9,9 @@ namespace CoffeeShop
    public interface Beverage
     {
 
-        int getCost();
+        int GetCost();
 
-        string getDescription();
+        string GetDescription();
 
     }
 

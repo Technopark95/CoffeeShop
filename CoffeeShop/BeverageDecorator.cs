@@ -18,8 +18,8 @@ namespace CoffeeShop
     [Beverage]
     abstract class BeverageDecorator : Beverage
     {
-        public abstract int getCost();
-        public abstract string getDescription();
+        public abstract int GetCost();
+        public abstract string GetDescription();
     }
 
 
