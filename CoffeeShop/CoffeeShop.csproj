@@ -43,16 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Beverage.cs" />
-    <Compile Include="BeverageDecorator.cs" />
-    <Compile Include="Caramel.cs" />
-    <Compile Include="Chocolate.cs" />
-    <Compile Include="Coffee.cs" />
-    <Compile Include="Cream.cs" />
-    <Compile Include="Honey.cs" />
+    <Compile Include="Data Layer\Beverage.cs" />
+    <Compile Include="Business Layer\BeverageDecorator.cs" />
+    <Compile Include="Business Layer\Caramel.cs" />
+    <Compile Include="Business Layer\Chocolate.cs" />
+    <Compile Include="Data Layer\Coffee.cs" />
+    <Compile Include="Data Layer\Constants.cs" />
+    <Compile Include="Business Layer\Cream.cs" />
+    <Compile Include="Business Layer\Honey.cs" />
+    <Compile Include="Business Layer\Menu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tea.cs" />
+    <Compile Include="Data Layer\Tea.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

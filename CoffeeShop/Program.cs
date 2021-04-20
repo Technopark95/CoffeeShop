@@ -11,35 +11,32 @@ namespace CoffeeShop
         static void Main(string[] args)
         {
 
-            Tea tea = new Tea(78);
 
-            dynamic Customization = new Caramel(tea, 56);
+            //Tea tea = new Tea(TeaCost);
 
-     
-            Customization = new Cream(Customization, 50);
+            //dynamic Customization = new Caramel(tea, CaramelCost);
 
-            Customization = new Honey(Customization, 45);
+            //Customization = new Cream(Customization, CreamCost);
 
-            Console.WriteLine("Total Cost : " + Customization.GetCost());
+            //Customization = new Honey(Customization, HoneyCost);
 
-            Console.WriteLine("Description : " + Customization.GetDescription());
+            //Console.WriteLine("Total Cost : " + Customization.GetCost());
 
-
-            //Chocolate TeaWith2CaramelplusChocolate = new Chocolate(TeaWithDoubleCaramel, 50);
-
-            //Honey TeaWithCarameWithCh = new Honey(TeaWithCaramel, 56);
+            //Console.WriteLine("Description : " + Customization.GetDescription());
 
 
-            //Console.WriteLine("Cost : " + TeaWithCarameWithCh.GetCost());
+            Menu MenuItem = new Menu();
 
-            //Console.WriteLine("Description : " + TeaWithCarameWithCh.GetDescription());
+            MenuItem.SelectItem();
 
-            //Console.WriteLine("Cost : " + TeaWith2CaramelplusChocolate.GetCost());
+            MenuItem.SelectAddOns();
 
-            //Console.WriteLine("Description : " +TeaWith2CaramelplusChocolate.GetDescription());
+            Console.WriteLine("Total Cost : " + MenuItem.GetCost());
 
+            Console.WriteLine("Total Description : " + MenuItem.GetDescription());
 
             Console.ReadKey();
+
 
         }
     }

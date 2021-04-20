@@ -4,3 +4,10 @@ c:\users\anoop.singh\onedrive - marketxpander services private limited\documents
 c:\users\anoop.singh\onedrive - marketxpander services private limited\documents\visual studio 2015\Projects\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.csprojResolveAssemblyReference.cache
 c:\users\anoop.singh\onedrive - marketxpander services private limited\documents\visual studio 2015\Projects\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.exe
 c:\users\anoop.singh\onedrive - marketxpander services private limited\documents\visual studio 2015\Projects\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.pdb
+C:\Users\Anoop\Desktop\Akash\CoffeeShop\CoffeeShop\bin\Debug\CoffeeShop.exe.config
+C:\Users\Anoop\Desktop\Akash\CoffeeShop\CoffeeShop\bin\Debug\CoffeeShop.exe
+C:\Users\Anoop\Desktop\Akash\CoffeeShop\CoffeeShop\bin\Debug\CoffeeShop.pdb
+C:\Users\Anoop\Desktop\Akash\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.csprojAssemblyReference.cache
+C:\Users\Anoop\Desktop\Akash\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.csproj.CoreCompileInputs.cache
+C:\Users\Anoop\Desktop\Akash\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.exe
+C:\Users\Anoop\Desktop\Akash\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.pdb
