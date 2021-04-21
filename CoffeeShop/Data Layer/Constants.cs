@@ -21,11 +21,11 @@ namespace CoffeeShop
         
         public const string DefaultTeaDescription = "Tea";
         public const string DefaultCoffeeDescription = "Coffee";
-        public const string AddOnsMenuInstruction = "Press 1 or 2 or 3 or 4 Respectively and press 0 to exit.";
+        public const string AddOnsMenuInstruction = "Press 1 or 2 or 3 or 4 Respectively and press 0 to exit.\n";
         public const string ItemMenuInstruction = "Press 1 or 2 respectively.";
         public const string MenuItemWrongChoice = "Input is out of range.";
         public const string AddOnItemWrongChoice = "Add-On is out of range.";
-        public const string AnyOtherChoice = "Do you want any other Add-On ?\n";
+        public const string AnyOtherChoice = "\nDo you want any other Add-On ?";
 
         public const char IncorrectInput = '$';
 
