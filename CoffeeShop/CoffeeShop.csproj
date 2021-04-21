@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business Layer\BeverageAttribute.cs" />
+    <Compile Include="Business Layer\BeverageExceptions.cs" />
+    <Compile Include="Business Layer\MenuInput.cs" />
     <Compile Include="Data Layer\Beverage.cs" />
     <Compile Include="Business Layer\BeverageDecorator.cs" />
     <Compile Include="Business Layer\Caramel.cs" />

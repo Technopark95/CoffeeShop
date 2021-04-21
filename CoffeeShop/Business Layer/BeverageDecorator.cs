@@ -8,12 +8,6 @@ namespace CoffeeShop
 {
 
 
-[AttributeUsage(AttributeTargets.All)]
- public class BeverageAttribute : System.Attribute
-   {
-     
-}
-
     [Beverage]
     abstract class BeverageDecorator : IBeverage
     {

@@ -8,8 +8,6 @@ namespace CoffeeShop
 {
     class Menu
     {
-
-
         // using private field prefixed with _ and camelCase
 
        private IBeverage _menuItem;
@@ -17,16 +15,20 @@ namespace CoffeeShop
        private int _totalCost;
        private string _description;
 
-     
-
         public void SelectItem()
         {
 
             Console.WriteLine(Constants.SelectItemMenu);
-         
 
-            this._choice = Console.ReadKey().KeyChar;
+            Console.WriteLine(Constants.ItemMenuInstruction);
 
+
+            MenuInput TakeInput = new MenuInput();
+
+
+             _choice =  TakeInput.SelectItemInput();
+
+            
             if (_choice == '1')
             {
                 _menuItem = new Tea(Constants.TeaCost);
@@ -38,7 +40,6 @@ namespace CoffeeShop
 
             }
 
-
             if (_choice == '2')
             {
                 _menuItem = new Coffee(Constants.CoffeeCost);
@@ -48,24 +49,27 @@ namespace CoffeeShop
                 _description = Constants.DefaultCoffeeDescription;
             }
 
-
         }
-
 
         public void SelectAddOns()
         {
 
-            Console.WriteLine(Constants.SelectAddOnsMenu);
-          
+            MenuInput TakeInput = new MenuInput();
 
-                while (true)
+            Console.WriteLine(Constants.SelectAddOnsMenu);
+
+            Console.WriteLine(Constants.AddOnsMenuInstruction);
+
+            while (true)
                 {
 
-                    char Choice = Console.ReadKey().KeyChar;
+                char Choice = TakeInput.SelectAddOnInput();
+
+                if (Choice == '$') continue;
 
                     Console.Write(" -> ");
 
-                    if (Choice == 'A' || Choice == 'a')
+                    if (Choice == '1')
                     {
 
                         Caramel Custom = new Caramel(_menuItem, Constants.CaramelCost);
@@ -77,25 +81,28 @@ namespace CoffeeShop
 
                 }
 
-                    if (Choice == 'B' || Choice == 'b')
+                    if (Choice == '2')
                     {
 
                         Chocolate Custom = new Chocolate(_menuItem, Constants.ChocolateCost);
+
                         _menuItem = Custom;
+
                         Console.WriteLine("Status : " + _menuItem.GetDescription());
 
                     }
 
-                    if (Choice == 'C' || Choice == 'c')
+                    if (Choice == '3')
                     {
 
                         Cream Custom = new Cream(_menuItem, Constants.CreamCost);
 
                         _menuItem = Custom;
+
                         Console.WriteLine("Status : " + _menuItem.GetDescription());
                     }
 
-                    if (Choice == 'D' || Choice == 'd')
+                    if (Choice == '4')
                     {
 
                         Honey Custom = new Honey(_menuItem, Constants.HoneyCost);
@@ -107,10 +114,12 @@ namespace CoffeeShop
                     }
 
 
-                    if (Choice == '9')
+                    if (Choice == '0')
                     {
 
-                        break;
+                    Console.WriteLine("Exit");
+
+                    break;
 
                     }
 
@@ -118,10 +127,10 @@ namespace CoffeeShop
                 _totalCost = _menuItem.GetCost();
                 _description = _menuItem.GetDescription();
 
+                Console.WriteLine(Constants.AnyOtherChoice);
+
+
             }
-
-
-
 
 
         }

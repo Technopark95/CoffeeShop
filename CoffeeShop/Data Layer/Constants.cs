@@ -17,11 +17,15 @@ namespace CoffeeShop
         public const int ChocolateCost = 30;
 
         public static string SelectItemMenu = $"Select :\n1.Tea      {TeaCost} \n2.Coffee   {CoffeeCost}\n";
-        public static string SelectAddOnsMenu = $"\n\nSelect :\nA.Caramel    {CaramelCost}  \nB.Chocolate  {ChocolateCost} \nC.Cream      {CreamCost} \nD.Honey      {HoneyCost} \n9.Exits\n";
+        public static string SelectAddOnsMenu = $"\n\nSelect :\n1. Caramel    {CaramelCost}  \n2. Chocolate  {ChocolateCost} \n3. Cream      {CreamCost} \n4. Honey      {HoneyCost} \n0.Exit\n";
+        
         public const string DefaultTeaDescription = "Tea";
         public const string DefaultCoffeeDescription = "Coffee";
-
-
+        public const string AddOnsMenuInstruction = "Press 1 or 2 or 3 or 4 Respectively and press 0 to exit.";
+        public const string ItemMenuInstruction = "Press 1 or 2 respectively.";
+        public const string MenuItemWrongChoice = "Input is out of range.";
+        public const string AddOnItemWrongChoice = "Add-On is out of range.";
+        public const string AnyOtherChoice = "Do you want any other Add-On ?\n";
 
     }
 }
