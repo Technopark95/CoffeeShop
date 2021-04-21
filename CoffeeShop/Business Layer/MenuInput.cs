@@ -54,12 +54,15 @@ namespace CoffeeShop
 
                 if (NotValidInput)
                 {
+
                     throw new BeverageExceptions();
+
                 }
 
             }
             catch (BeverageExceptions e)
             {
+
                 e.AddOnItemInputException();
 
                 return '$';
