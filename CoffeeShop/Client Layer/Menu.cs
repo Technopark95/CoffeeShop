@@ -65,7 +65,7 @@ namespace CoffeeShop
 
                 char Choice = TakeInput.SelectAddOnInput();
 
-                if (Choice == '$') continue;
+                if (Choice == Constants.IncorrectInput) continue;
 
                     Console.Write(" -> ");
 

@@ -15,12 +15,12 @@ namespace CoffeeShop
 
             char Choice = ' ';
 
-            try {
+         try {
 
              Choice = Console.ReadKey().KeyChar;
 
 
-                if (Choice != '1' && Choice != '2')
+            if (Choice != '1' && Choice != '2')
             {
                 throw new BeverageExceptions();
             }
@@ -39,6 +39,7 @@ namespace CoffeeShop
             return Choice;
 
         }
+
 
         public char SelectAddOnInput()
 
@@ -67,7 +68,7 @@ namespace CoffeeShop
 
                 e.AddOnItemInputException();
 
-                return '$';
+                return Constants.IncorrectInput;
 
             }
 

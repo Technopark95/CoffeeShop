@@ -27,5 +27,7 @@ namespace CoffeeShop
         public const string AddOnItemWrongChoice = "Add-On is out of range.";
         public const string AnyOtherChoice = "Do you want any other Add-On ?\n";
 
+        public const char IncorrectInput = '$';
+
     }
 }
