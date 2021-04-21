@@ -55,8 +55,7 @@ namespace CoffeeShop
         public void SelectAddOns()
         {
 
-            Console.WriteLine(Constants.SelectAdonsMenu);
-
+            Console.WriteLine(Constants.SelectAddOnsMenu);
           
 
                 while (true)

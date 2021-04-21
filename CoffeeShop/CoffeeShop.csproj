@@ -51,8 +51,8 @@
     <Compile Include="Data Layer\Constants.cs" />
     <Compile Include="Business Layer\Cream.cs" />
     <Compile Include="Business Layer\Honey.cs" />
-    <Compile Include="Business Layer\Menu.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Client Layer\Menu.cs" />
+    <Compile Include="Client Layer\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Data Layer\Tea.cs" />
   </ItemGroup>
