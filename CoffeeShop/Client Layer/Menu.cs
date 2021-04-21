@@ -33,7 +33,7 @@ namespace CoffeeShop
 
                 _totalCost = Constants.TeaCost;
 
-                _description = "Tea";
+                _description = Constants.DefaultTeaDescription;
 
 
             }
@@ -45,7 +45,7 @@ namespace CoffeeShop
 
                 _totalCost = Constants.CoffeeCost;
 
-                _description = "Coffee";
+                _description = Constants.DefaultCoffeeDescription;
             }
 
 
@@ -63,7 +63,7 @@ namespace CoffeeShop
 
                     char Choice = Console.ReadKey().KeyChar;
 
-                Console.Write(" -> ");
+                    Console.Write(" -> ");
 
                     if (Choice == 'A' || Choice == 'a')
                     {
@@ -89,7 +89,7 @@ namespace CoffeeShop
                     if (Choice == 'C' || Choice == 'c')
                     {
 
-                    Cream Custom = new Cream(_menuItem, Constants.CreamCost);
+                        Cream Custom = new Cream(_menuItem, Constants.CreamCost);
 
                         _menuItem = Custom;
                         Console.WriteLine("Status : " + _menuItem.GetDescription());
