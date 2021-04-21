@@ -125,6 +125,7 @@ namespace CoffeeShop
 
 
                 _totalCost = _menuItem.GetCost();
+
                 _description = _menuItem.GetDescription();
 
                 Console.WriteLine(Constants.AnyOtherChoice);

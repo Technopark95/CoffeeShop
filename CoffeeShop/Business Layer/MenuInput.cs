@@ -38,7 +38,7 @@ namespace CoffeeShop
 
             return Choice;
 
-}
+        }
 
         public char SelectAddOnInput()
 
@@ -50,7 +50,9 @@ namespace CoffeeShop
 
                 Choice = Console.ReadKey().KeyChar;
 
-                bool NotValidInput = Choice != '1' && Choice != '2' && Choice != '3' && Choice != '4' && Choice != '0';
+                bool NotValidInput = Choice != '1' && Choice != '2' 
+                                     && Choice != '3' && Choice != '4' 
+                                     && Choice != '0';
 
                 if (NotValidInput)
                 {
