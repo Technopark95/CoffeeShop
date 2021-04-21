@@ -12,7 +12,7 @@ namespace CoffeeShop
 
         // using private field prefixed with _ and camelCase
 
-       private dynamic _menuItem;
+       private IBeverage _menuItem;
        private char _choice;
        private int _totalCost;
        private string _description;
@@ -68,7 +68,7 @@ namespace CoffeeShop
                     if (Choice == 'A' || Choice == 'a')
                     {
 
-                        dynamic Custom = new Caramel(_menuItem, Constants.CaramelCost);
+                        Caramel Custom = new Caramel(_menuItem, Constants.CaramelCost);
 
                         _menuItem = Custom;
 
@@ -80,7 +80,7 @@ namespace CoffeeShop
                     if (Choice == 'B' || Choice == 'b')
                     {
 
-                        dynamic Custom = new Chocolate(_menuItem, Constants.ChocolateCost);
+                        Chocolate Custom = new Chocolate(_menuItem, Constants.ChocolateCost);
                         _menuItem = Custom;
                         Console.WriteLine("Status : " + _menuItem.GetDescription());
 
@@ -89,7 +89,7 @@ namespace CoffeeShop
                     if (Choice == 'C' || Choice == 'c')
                     {
 
-                        dynamic Custom = new Cream(_menuItem, Constants.CreamCost);
+                    Cream Custom = new Cream(_menuItem, Constants.CreamCost);
 
                         _menuItem = Custom;
                         Console.WriteLine("Status : " + _menuItem.GetDescription());
@@ -98,7 +98,7 @@ namespace CoffeeShop
                     if (Choice == 'D' || Choice == 'd')
                     {
 
-                        dynamic Custom = new Honey(_menuItem, Constants.HoneyCost);
+                        Honey Custom = new Honey(_menuItem, Constants.HoneyCost);
 
                         _menuItem = Custom;
 
