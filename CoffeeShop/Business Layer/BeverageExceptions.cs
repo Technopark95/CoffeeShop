@@ -6,22 +6,15 @@ using System.Threading.Tasks;
 
 namespace CoffeeShop
 {
-   public class BeverageExceptions : Exception
+    public class BeverageExceptions : Exception
     {
-
-
-       public void MenuItemInputException()
+        public void MenuItemInputException()
         {
             Console.WriteLine(Constants.MenuItemWrongChoice);
         }
-
-
         public void AddOnItemInputException()
         {
             Console.WriteLine(Constants.AddOnItemWrongChoice);
         }
-
-
-
     }
 }

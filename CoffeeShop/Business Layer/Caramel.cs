@@ -6,30 +6,19 @@ using System.Threading.Tasks;
 
 namespace CoffeeShop
 {
-     class Caramel : BeverageDecorator
+    class Caramel : BeverageDecorator
     {
-       
-       private IBeverage _beverageType;
-       private  int _addOnCost;
-  
-
-        public Caramel(IBeverage typeOfBeverage , int costOfAddOn)
+        private IBeverage _beverageType;
+        private int _addOnCost;
+        public Caramel(IBeverage typeOfBeverage, int costOfAddOn)
         {
-
             _beverageType = typeOfBeverage;
-            _addOnCost = costOfAddOn; 
-            
+            _addOnCost = costOfAddOn;
         }
-
-
         public override int GetCost()
         {
-           
-
             return _beverageType.GetCost() + _addOnCost;
-
         }
-
         public override string GetDescription()
         {
             return _beverageType.GetDescription() + " topped with Caramel";

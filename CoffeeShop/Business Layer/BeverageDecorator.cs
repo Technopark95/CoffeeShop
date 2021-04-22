@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace CoffeeShop
 {
-
-
     [Beverage]
     abstract class BeverageDecorator : IBeverage
     {
         public abstract int GetCost();
         public abstract string GetDescription();
     }
-
-
 }

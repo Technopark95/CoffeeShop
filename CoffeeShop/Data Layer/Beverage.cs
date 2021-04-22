@@ -6,14 +6,9 @@ using System.Threading.Tasks;
 
 namespace CoffeeShop
 {
-   public interface IBeverage
+    public interface IBeverage
     {
-
         int GetCost();
-
         string GetDescription();
-
     }
-
-
 }
