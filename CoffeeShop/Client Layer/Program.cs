@@ -13,17 +13,23 @@ namespace CoffeeShop
             try
             {
                 Menu MenuItem = new Menu();
+
                 MenuItem.SelectItem();
+
                 MenuItem.SelectAddOns();
+
                 Console.WriteLine("\n"); // 2 line spacing
+
                 Console.WriteLine("Total Cost : " + MenuItem.GetCost());
                 Console.WriteLine("Total Description : " + MenuItem.GetDescription());
+
                 Console.WriteLine(Constants.ThankYouMessage);
             }
             catch (Exception Except)
             {
                 Console.WriteLine(Except.Message);
             }
+
             Console.ReadKey();
         }
     }
