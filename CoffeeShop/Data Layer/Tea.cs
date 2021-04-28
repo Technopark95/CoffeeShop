@@ -20,7 +20,7 @@ namespace CoffeeShop
         }
         public string GetDescription()
         {
-            return "Tea";
+            return Constants.DefaultTeaDescription;
         }
     }
 }
